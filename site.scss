@@ -16,10 +16,18 @@
 
 // Custom DW styles
 
-.uk-background-primary, .uk-card-primary, .uk-tile-primary {
+.dw-logo {
+  fill: #009bdc;
+
+  #rknText {
+    fill: #5A2572;
+  }
+}
+
+.uk-background-primary, .uk-card-primary, .uk-tile-primary, .uk-navbar {
   .dw-logo {
     #rknText {
-      color: #fff;
+      fill: #fff;
     }
   }
 }
