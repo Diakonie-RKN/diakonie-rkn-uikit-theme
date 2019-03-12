@@ -1,0 +1,35 @@
+// Name:            Icon
+// Description:     Component to create icons
+//
+// Component:       `uk-icon`
+//
+// Modifiers:       `uk-icon-image`
+//                  `uk-icon-link`
+//                  `uk-icon-button`
+//
+// States:          `uk-preserve`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+$icon-image-size:                                20px !default;
+
+$icon-link-color:                                $global-muted-color !default;
+$icon-link-hover-color:                          $global-color !default;
+$icon-link-active-color:                         darken($global-color, 5%) !default;
+
+$icon-button-size:                               36px !default;
+$icon-button-border-radius:                      500px !default;
+$icon-button-background:                         $global-primary-background;
+$icon-button-color:                              #fff;
+
+$icon-button-hover-background:                   darken($icon-button-background, 5%) !default;
+$icon-button-hover-color:                        #fff;
+
+$icon-button-active-background:                  darken($icon-button-background, 10%) !default;
+$icon-button-active-color:                       $global-color !default;
+
+
