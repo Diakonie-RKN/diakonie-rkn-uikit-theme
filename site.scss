@@ -2,6 +2,7 @@
 @import "theme/variables.scss";
 @import "theme/icon.scss";
 @import "theme/navbar.scss";
+@import "theme/offcanvas.scss";
 @import "theme/tile.scss";
 
 // 2. Import default variables and available mixins.
@@ -16,6 +17,10 @@
 
 
 // Custom DW styles
+
+body {
+  background: #777777;
+}
 
 .uk-background-primary, .uk-card-primary, .uk-tile-primary, .uk-navbar-item {
   .dw-logo {

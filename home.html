@@ -6,31 +6,277 @@
     <title>Diakonie Rhein-Kreis Neuss e.V.</title>
     <link rel="stylesheet" href="dist/css/app.min.css">
     <script src="dist/js/app.min.js"></script>
+    <script src="node_modules/loremjs/lorem.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-<nav class="uk-navbar-container">
-    <div class="uk-container">
-        <div uk-navbar>
-            <div class="uk-navbar-left">
+<div class="uk-container uk-container-large uk-background-default uk-padding-remove" uk-viewport-height>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left uk-tile uk-tile-primary uk-padding-remove-vertical">
                 <a class="uk-navbar-item uk-padding-remove" href="#"><img src="images/logo-diakonie-rkn.svg" width="170" height="44" class="uk-preserve dw-logo" uk-svg></a>
             </div>
             <div class="uk-navbar-right">
-                <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                <input class="uk-search-input" type="search" placeholder="Suchen..." autofocus>
+                            </form>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                        </div>
+                    </div>
+
+                </div>
                 <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-default uk-padding-remove-vertical">
+        <div uk-slider>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <ul class="uk-slider-items">
+                    <li class="uk-width-1-1">
+                        <a href="#">
+                            <div class="uk-card uk-grid-collapse" uk-grid>
+                                <div class="uk-width-expand dw-tile-violet-2">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" data-lorem="1s"></h3>
+                                        <p data-lorem="4s"></p>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-right uk-cover-container uk-width-2-3@m uk-height-large">
+                                    <img src="images/photo2.jpg" alt="" uk-cover>
+                                    <canvas width="420" height="400"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <a href="#">
+                            <div class="uk-card uk-grid-collapse" uk-grid>
+                                <div class="uk-width-expand dw-tile-violet-2">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" data-lorem="1s"></h3>
+                                        <p data-lorem="4s"></p>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-right uk-cover-container uk-width-2-3@m uk-height-large">
+                                    <img src="images/photo3.jpg" alt="" uk-cover>
+                                    <canvas width="420" height="400"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <a href="#">
+                            <div class="uk-card uk-grid-collapse" uk-grid>
+                                <div class="uk-width-expand dw-tile-violet-2">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title" data-lorem="1s"></h3>
+                                        <p data-lorem="4s"></p>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-right uk-cover-container uk-width-2-3@m uk-height-large">
+                                    <img src="images/Diakonie_FCiccolella_A_Hauswirtschaft.png" alt="" uk-cover>
+                                    <canvas width="420" height="400"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-padding uk-background-default"></ul>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-default">
+        <div class="uk-tile uk-tile-default uk-padding-remove-vertical uk-margin-small-bottom">
+            <h2>Wir sind vor Ort für Sie da</h2>
+        </div>
+        <div class="uk-child-width-1-2@m uk-grid-collapse uk-grid-match" uk-grid>
+            <div class="uk-tile dw-tile-violet-4">
+                <form class="uk-form-stacked">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">Was suchen Sie?</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="form-stacked-select">
+                                <option>Alle Einrichtungen</option>
+                                <option>Senioreneinrichtung</option>
+                                <option>Kindertagesst&auml;tte</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">Wo suchen Sie?</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="form-stacked-select">
+                                <option>Im gesamten Rhein-Kreis Neuss</option>
+                                <option>Grevenbroich</option>
+                                <option>Neuss</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Freitextsuche</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Suchbegriff">
+                        </div>
+                    </div>
+                    <div class="uk-margin-large-top">
+                        <button type="submit" class="uk-button uk-button-default uk-button-large">Einrichtungen finden</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <iframe uk-responsive src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160086.35198523395!2d6.518934388319198!3d51.17578556317158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b4bf7e3a6981%3A0xa2151229cd99db42!2sRhein-Kreis+Neuss!5e0!3m2!1sde!2sde!4v1552482351734" width="" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-</nav>
 
-<div class="uk-section">
-    <div class="uk-child-width-1-2@m uk-grid-collapse uk-grid-match" uk-grid>
-        <div class="uk-tile dw-tile-violet-2">
-            Was suchen Sie?
+    <div class="uk-section uk-section-default">
+        <div class="uk-tile uk-tile-default uk-padding-remove-vertical uk-margin-small-bottom">
+            <h2>Aktuelles</h2>
         </div>
-        <div>Map</div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid-match" uk-grid>
+            <div class="uk-tile dw-tile-violet-1 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+            <div class="uk-tile dw-tile-violet-2 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+            <div class="uk-tile dw-tile-violet-3 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+            <div class="uk-tile dw-tile-violet-4 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+            <div class="uk-tile dw-tile-violet-1 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+            <div class="uk-tile dw-tile-violet-2 uk-height-medium">
+                <a href="#" class="uk-link-text">
+                    <p class="uk-article-meta uk-margin-remove">12.03.2019</p>
+                    <h3 data-lorem="1s" class="uk-margin-small-top"></h3>
+                </a>
+            </div>
+        </div>
     </div>
-</div>
 
+    <div class="uk-section uk-section-default">
+        <div class="uk-tile uk-tile-default uk-padding-remove-vertical uk-margin-small-bottom">
+            <h2>Stellenangebote</h2>
+        </div>
+        <div class="uk-background-muted">
+            <div uk-slider>
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <ul class="uk-slider-items">
+                        <li class="uk-width-1-1">
+                            <a href="#">
+                                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                                    <div class="uk-card-media-left uk-cover-container uk-height-large">
+                                        <img src="images/Diakonie_FCiccolella_A_Bildung.png" alt="" uk-cover>
+                                        <canvas width="420" height="350"></canvas>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">Erzieher/in</h3>
+                                            <p data-lorem="4s"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="uk-width-1-1">
+                            <a href="#">
+                                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                                    <div class="uk-card-media-left uk-cover-container uk-height-large">
+                                        <img src="images/Diakonie_FCiccolella_A_Beratung.png" alt="" uk-cover>
+                                        <canvas width="420" height="350"></canvas>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">Schuldenberater/in</h3>
+                                            <p data-lorem="4s"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-padding uk-background-default"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-default">
+        <div class="uk-grid-collapse uk-grid-match" uk-grid>
+            <div class="uk-width-1-3@m uk-tile dw-tile-violet-1">
+                <h2 class="uk-h3"><img src="icons/spenden.svg" width="30" height="30" class="uk-text-baseline" alt="Spenden" uk-svg> Spenden</h2>
+                <a href="#"><p data-lorem="4s"></p></a>
+            </div>
+            <div class="uk-width-expand uk-tile dw-tile-violet-4">
+                <ul class="uk-list uk-list-bullet">
+                    <li><a href="" data-lorem="1s"></a></li>
+                    <li><a href="" data-lorem="1s"></a></li>
+                    <li><a href="" data-lorem="1s"></a></li>
+                    <li><a href="" data-lorem="1s"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="uk-section uk-section-default uk-padding-remove-bottom">
+        <nav class="uk-tile dw-tile-violet-1">
+            <ul class="uk-subnav">
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Stellenangebote</a></li>
+            </ul>
+        </nav>
+        <div class="uk-padding uk-text-center">
+            &copy; 2019 Diakonie Rhein-Kreis Neuss e.V.<br>
+            Am St&auml;ndehaus 12 - 41515 Grevenbroich
+        </div>
+    </footer>
+</div>
 </body>
 </html>
