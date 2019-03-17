@@ -1,0 +1,13 @@
+@mixin hook-nav-primary-item(){
+  padding-left: $padding-small-padding;
+  padding-right: $padding-small-padding;
+}
+
+@mixin hook-nav-primary-item-hover(){
+  text-decoration: underline;
+}
+
+@mixin hook-nav-primary-item-active(){
+  background: $dw-secondary-color;
+  color: #fff;
+}

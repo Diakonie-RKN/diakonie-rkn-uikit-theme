@@ -35,7 +35,7 @@
 // Variables
 // ========================================================================
 
-$navbar-background:                              #462672;
+$navbar-background:                              $dw-violet-4;
 $navbar-color-mode:                              none !default;
 
 $navbar-nav-item-height:                         80px !default;
@@ -43,14 +43,14 @@ $navbar-nav-item-padding-horizontal:             15px !default;
 $navbar-nav-item-color:                          $global-inverse-color;
 $navbar-nav-item-font-size:                      $global-font-size !default;
 $navbar-nav-item-font-family:                    $global-font-family !default;
-$navbar-nav-item-hover-color:                    #009bdc;
+$navbar-nav-item-hover-color:                    $dw-secondary-color;
 $navbar-nav-item-onclick-color:                  $global-emphasis-color !default;
 $navbar-nav-item-active-color:                   $global-emphasis-color !default;
 
 $navbar-item-color:                              $global-inverse-color;
 
 $navbar-toggle-color:                            $global-inverse-color;
-$navbar-toggle-hover-color:                      #009bdc;
+$navbar-toggle-hover-color:                      $dw-secondary-color;
 
 $navbar-subtitle-font-size:                      $global-small-font-size !default;
 
@@ -78,35 +78,3 @@ $navbar-dropdown-nav-sublist-item-active-color:  $global-emphasis-color !default
 
 $navbar-dropbar-background:                      $navbar-dropdown-background !default;
 $navbar-dropbar-z-index:                         $global-z-index - 20 !default;
-
-
-// Hooks
-// ========================================================================
-
-// @mixin hook-navbar(){}
-// @mixin hook-navbar-container(){}
-// @mixin hook-navbar-nav-item(){}
-// @mixin hook-navbar-nav-item-hover(){}
-// @mixin hook-navbar-nav-item-onclick(){}
-@mixin hook-navbar-nav-item-active(){
-  font-weight: bold;
-}
-// @mixin hook-navbar-item(){}
-// @mixin hook-navbar-toggle(){}
-// @mixin hook-navbar-toggle-hover(){}
-// @mixin hook-navbar-toggle-icon(){}
-// @mixin hook-navbar-toggle-icon-hover(){}
-// @mixin hook-navbar-subtitle(){}
-// @mixin hook-navbar-transparent(){}
-// @mixin hook-navbar-sticky(){}
-// @mixin hook-navbar-dropdown(){}
-// @mixin hook-navbar-dropdown-dropbar(){}
-// @mixin hook-navbar-dropdown-nav(){}
-// @mixin hook-navbar-dropdown-nav-item(){}
-// @mixin hook-navbar-dropdown-nav-item-hover(){}
-// @mixin hook-navbar-dropdown-nav-item-active(){}
-// @mixin hook-navbar-dropdown-nav-header(){}
-// @mixin hook-navbar-dropdown-nav-divider(){}
-// @mixin hook-navbar-dropbar(){}
-// @mixin hook-navbar-dropbar-slide(){}
-// @mixin hook-navbar-misc(){}

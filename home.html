@@ -14,7 +14,7 @@
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left uk-tile uk-tile-primary uk-padding-remove-vertical">
-                <a class="uk-navbar-item uk-padding-remove" href="#"><img src="images/logo-diakonie-rkn.svg" width="170" height="44" class="uk-preserve dw-logo" uk-svg></a>
+                <a class="uk-navbar-item uk-padding-remove" href="#"><img src="images/logo-diakonie-rkn.svg" width="170" height="44" class="uk-preserve dw-logo" alt="Diakonie Rhein-Kreis Neuss" uk-svg></a>
             </div>
             <div class="uk-navbar-right">
                 <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
@@ -32,14 +32,23 @@
 
                 </div>
                 <a class="uk-navbar-toggle" href="#" uk-navbar-toggle-icon uk-toggle></a>
-                <div class="uk-navbar-dropdown uk-width-4-5 uk-width-1-3@m" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
-                    <div class="uk-child-width-auto" uk-grid>
+                <div class="uk-navbar-dropdown uk-width-4-5 uk-width-3-5@m" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                    <div class="uk-child-width-1-2@m uk-grid-divider" uk-grid>
                         <div>
                             <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
                                     <a href="#">Leben im Alter</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="#">Seniorenzentren</a></li>
+                                        <li class="uk-parent">
+                                            <a href="#">Seniorenzentren</a>
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="#">Seniorenzentrum Albert Schweitzer-Haus, <span class="uk-label">Grevenbroich</span></a></li>
+                                                <li><a href="#">Wohn- und Begegnungszentrum Fliedner-Haus, Neuss</a></li>
+                                                <li><a href="#">Seniorenzentrum Markuskirche, Dormagen</a></li>
+                                                <li><a href="#">Seniorenzentrum Haus Tabita, Korschenbroich</a></li>
+                                                <li><a href="#">Seniorenzentrum Haus Timon, Korschenbroich</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">Ambulante Pflege</a></li>
                                     </ul>
                                 </li>
@@ -50,11 +59,18 @@
                                         <li><a href="#">Sub item</a></li>
                                     </ul>
                                 </li>
+                                <li class="uk-parent">
+                                    <a href="#">Psychisch behinderte Menschen</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-                                <li class="uk-parent">
+                                <li class="uk-parent uk-active">
                                     <a href="#">Wir über uns</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="#">Seniorenzentren</a></li>
@@ -64,6 +80,7 @@
                                 <li><a href="#">Aktuelles</a></li>
                                 <li><a href="#">Stellenangebote</a></li>
                                 <li><a href="#">Spenden</a></li>
+                                <li><a href="#">Ehrenamt</a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,9 +157,9 @@
             <div class="uk-tile dw-tile-violet-4">
                 <form class="uk-form-stacked">
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-stacked-select">Was suchen Sie?</label>
+                        <label class="uk-form-label" for="form-stacked-select1">Was suchen Sie?</label>
                         <div class="uk-form-controls">
-                            <select class="uk-select" id="form-stacked-select">
+                            <select class="uk-select" id="form-stacked-select1">
                                 <option>Alle Einrichtungen</option>
                                 <option>Senioreneinrichtung</option>
                                 <option>Kindertagesst&auml;tte</option>
@@ -150,9 +167,9 @@
                         </div>
                     </div>
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-stacked-select">Wo suchen Sie?</label>
+                        <label class="uk-form-label" for="form-stacked-select2">Wo suchen Sie?</label>
                         <div class="uk-form-controls">
-                            <select class="uk-select" id="form-stacked-select">
+                            <select class="uk-select" id="form-stacked-select2">
                                 <option>Im gesamten Rhein-Kreis Neuss</option>
                                 <option>Grevenbroich</option>
                                 <option>Neuss</option>

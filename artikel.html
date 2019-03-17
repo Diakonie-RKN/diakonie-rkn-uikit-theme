@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diakonie Rhein-Kreis Neuss e.V.</title>
+    <link rel="stylesheet" href="dist/css/app.min.css">
+    <script src="dist/js/app.min.js"></script>
+    <script src="node_modules/loremjs/lorem.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div class="uk-container uk-container-large uk-background-default uk-padding-remove" uk-viewport-height>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left uk-tile uk-tile-primary uk-padding-remove-vertical">
+                <a class="uk-navbar-item uk-padding-remove" href="#"><img src="images/logo-diakonie-rkn.svg" width="170" height="44" class="uk-preserve dw-logo" alt="Diakonie Rhein-Kreis Neuss" uk-svg></a>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                <input class="uk-search-input" type="search" placeholder="Suchen..." autofocus>
+                            </form>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="uk-navbar-toggle" href="#" uk-navbar-toggle-icon uk-toggle></a>
+                <div class="uk-navbar-dropdown uk-width-4-5 uk-width-1-3@m" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-container uk-container-xsmall">
+        <div class="uk-section uk-article">
+            <header class="uk-padding">
+                <h1 class="uk-article-title" data-lorem="1s"></h1>
+                <p class="uk-article-meta">12.03.2019</p>
+                <p class="uk-text-lead" data-lorem="2s"></p>
+            </header>
+            <figure class="uk-margin-remove-top uk-inline">
+                <img src="images/photo2.jpg" alt="">
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p data-lorem="1s"></p>
+                </div>
+            </figure>
+            <div class="uk-padding-small">
+
+                <p data-lorem="20s"></p>
+                <p data-lorem="10s"></p>
+                <p data-lorem="15s"></p>
+
+                <ul class="uk-list uk-list-divider">
+                    <li><a href="" data-lorem="1s"><span uk-icon="download" class="uk-icon-button"></span> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="uk-section uk-section-default uk-padding-remove-bottom">
+        <nav class="uk-tile dw-tile-violet-1 uk-flex uk-flex-center">
+            <ul class="uk-subnav">
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Stellenangebote</a></li>
+            </ul>
+        </nav>
+        <div class="uk-padding uk-text-center">
+            &copy; 2019 Diakonie Rhein-Kreis Neuss e.V.<br>
+            Am St&auml;ndehaus 12 - 41515 Grevenbroich
+        </div>
+    </footer>
+</div>
+</body>
+</html>
