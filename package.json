@@ -1,4 +1,17 @@
 {
+  "name": "diakonie-rhein-kreis-neuss-uikit-theme",
+  "description": "The UIKit based theme for the Diakonie Rhein-Kreis Neuss website",
+  "homepage": "https://www.diakonie-rkn.de/",
+  "author": {
+    "name": "Jens Kuesters",
+    "email": "jens@kuesters.net",
+    "url": "https://www.kuesters.net/"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://jkuesters@bitbucket.org/kuestersnet/diakonie-rhein-kreis-neuss-uikit-theme.git"
+  },
   "dependencies": {
     "uikit": "^3.0.3",
     "umbrellajs": "^3.1.0"
