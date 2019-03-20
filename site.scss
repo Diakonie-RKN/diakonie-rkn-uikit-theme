@@ -22,6 +22,11 @@
 
 body {
   background: #777777;
+
+  &.cke_editable {
+    background: #fff;
+    padding: 10px;
+  }
 }
 
 .uk-background-primary, .uk-card-primary, .uk-tile-primary, .uk-navbar-item {
