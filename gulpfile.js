@@ -19,7 +19,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js-app', function(){
-  return gulp.src(['node_modules/uikit/dist/js/uikit.js', 'node_modules/uikit/dist/js/uikit-icons.js', 'node_modules/umbrellajs/umbrella.js', 'site.js'])
+  return gulp.src(['node_modules/uikit/dist/js/uikit.js', 'node_modules/@fortawesome/fontawesome-free/js/all.js', 'node_modules/umbrellajs/umbrella.js', 'site.js'])
       .pipe(sourcemaps.init())
       .pipe(concat('app.min.js'))
       .pipe(uglify())
@@ -27,13 +27,6 @@ gulp.task('js-app', function(){
       .pipe(gulp.dest('./dist/js'))
 });
 
-gulp.task('js-lazy-sizes', function(){
-  return gulp.src('node_modules/lazysizes/lazysizes.js')
-      .pipe(uglify())
-      .pipe(rename('lazysizes.min.js'))
-      .pipe(gulp.dest('./js'))
-});
-
-gulp.task('js', gulp.series('js-app', 'js-lazy-sizes'));
+gulp.task('js', gulp.series('js-app'));
 
 gulp.task('default', gulp.series('css', 'js'));
