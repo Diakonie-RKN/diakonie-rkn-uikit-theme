@@ -1,0 +1,11 @@
+@mixin hook-modal-title(){
+  color: $global-inverse-color;
+}
+
+@mixin hook-modal-close-default(){
+  color: $global-inverse-color;
+}
+
+@mixin hook-modal-footer(){
+  border-top: 1px solid $global-muted-background;
+}
