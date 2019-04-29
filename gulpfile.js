@@ -19,7 +19,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js-app', function(){
-  return gulp.src(['node_modules/uikit/dist/js/uikit.js', 'node_modules/@fortawesome/fontawesome-free/js/all.js', 'node_modules/umbrellajs/umbrella.js', 'site.js'])
+  return gulp.src(['node_modules/uikit/dist/js/uikit.js', 'node_modules/uikit/dist/js/uikit-icons.js', 'node_modules/umbrellajs/umbrella.js', 'site.js'])
       .pipe(sourcemaps.init())
       .pipe(concat('app.min.js'))
       .pipe(uglify())
