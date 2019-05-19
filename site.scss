@@ -1,6 +1,8 @@
 // 1. Your custom variables and variable overwrites.
 @import "theme/variables.scss";
+@import "theme/form.scss";
 @import "theme/icon.scss";
+@import "theme/modal.scss";
 @import "theme/nav.scss";
 @import "theme/navbar.scss";
 @import "theme/offcanvas.scss";
@@ -12,13 +14,11 @@
 
 // 3. Your custom mixin overwrites.
 @import "theme/nav-mixins.scss";
+@import "theme/modal-mixins.scss";
 @import "theme/navbar-mixins.scss";
 
 // 4. Import UIkit
 @import "node_modules/uikit/src/scss/uikit.scss";
-
-// Font Awesome
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 
 // Custom DW styles
