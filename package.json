@@ -10,7 +10,7 @@
   "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "https://jkuesters@bitbucket.org/kuestersnet/diakonie-rhein-kreis-neuss-uikit-theme.git"
+    "url": "https://github.com/derteaser/diakonie-rkn-uikit-theme.git"
   },
   "dependencies": {
     "uikit": "^3.3.0",
