@@ -26,7 +26,7 @@ The font family used throughout the whole site is `Helvetica Neue,Helvetica,Aria
 An SVG logo that can be styled is used in this project. The cross and "Diakonie" lettering always uses the secondary color (light blue). 
 The "Rhein-Kreis Neuss" lettering can be white on dark backgrounds or the primary color on light ones.
 
-![Diakonie Logo](https://bitbucket.org/kuestersnet/diakonie-rhein-kreis-neuss-uikit-theme/raw/16b0c7d23c4180e44bc12f3ce46bdb9f042123e2/images/logo-diakonie-rkn.svg)
+![Diakonie Logo](https://github.com/derteaser/diakonie-rkn-uikit-theme/blob/master/images/logo-diakonie-rkn.svg)
 
 ## Demo Pages
 
