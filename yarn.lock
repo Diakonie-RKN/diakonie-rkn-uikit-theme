@@ -3133,10 +3133,10 @@ uglify-js@^3.0.5:
     commander "~2.20.0"
     source-map "~0.6.1"
 
-uikit@^3.0.3:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.1.5.tgz#79c68bd1f7be779c1748734bbc281ac531a53129"
-  integrity sha512-6kN9GewAeFXeOVRbtLL1PIhIXixIDbRMJGHnIiMXJT5Bp3n6HYfVdaBIjJLEh9Ffuv3JdGnwZdKuGpp7oNcRhw==
+uikit@^3.3.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.3.1.tgz#342987c1d5072a04f63630429310e79cd74d7b8a"
+  integrity sha512-ddE01TPVP2rA8A/a9wkaixkhympjIOfpL//Gp0lHrjTNskBZYIazmBjW9OifJNrvp5di/1kbWVBl8fWKswAQnQ==
 
 umbrellajs@^3.1.0:
   version "3.1.0"

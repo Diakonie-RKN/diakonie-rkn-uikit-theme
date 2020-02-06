@@ -7,13 +7,13 @@
     "email": "jens@kuesters.net",
     "url": "https://www.kuesters.net/"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://jkuesters@bitbucket.org/kuestersnet/diakonie-rhein-kreis-neuss-uikit-theme.git"
   },
   "dependencies": {
-    "uikit": "^3.0.3",
+    "uikit": "^3.3.0",
     "umbrellajs": "^3.1.0"
   },
   "devDependencies": {
