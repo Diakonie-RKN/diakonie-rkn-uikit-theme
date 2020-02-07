@@ -17,7 +17,7 @@ Open `index.html` in your browser.
 ## Colors
 | Primary Color   | Secondary Color   |
 | --------------- | ----------------- |
-| #5A2572         | #009BDC           |
+| ![#5A2572](https://placehold.it/15/5A2572/000000?text=+) `#5A2572` | ![#009BDC](https://placehold.it/15/009BDC/000000?text=+) `#009BDC` |
 
 ## Fonts
 The font family used throughout the whole site is `Helvetica Neue,Helvetica,Arial,sans-serif`
@@ -30,7 +30,7 @@ The "Rhein-Kreis Neuss" lettering can be white on dark backgrounds or the primar
 
 ## Demo Pages
 
-* Kitchen Sink
-* Homepage
-* Institution
-* News Article
+* [Kitchen Sink](https://derteaser.github.io/diakonie-rkn-uikit-theme/)
+* [Homepage](https://derteaser.github.io/diakonie-rkn-uikit-theme/home.html)
+* [Institution](https://derteaser.github.io/diakonie-rkn-uikit-theme/einrichtung.html)
+* [News Article](https://derteaser.github.io/diakonie-rkn-uikit-theme/artikel.html)
