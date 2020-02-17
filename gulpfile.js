@@ -27,6 +27,15 @@ gulp.task('js-app', function(){
       .pipe(gulp.dest('./dist/js'))
 });
 
-gulp.task('js', gulp.series('js-app'));
+gulp.task('js-lorem', function(){
+  return gulp.src(['node_modules/loremjs/lorem.js'])
+      .pipe(sourcemaps.init())
+      .pipe(concat('lorem.min.js'))
+      .pipe(uglify())
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('./'))
+});
+
+gulp.task('js', gulp.series('js-app', 'js-lorem'));
 
 gulp.task('default', gulp.series('css', 'js'));
