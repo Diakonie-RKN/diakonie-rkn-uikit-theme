@@ -13,12 +13,14 @@
     "url": "https://github.com/derteaser/diakonie-rkn-uikit-theme.git"
   },
   "dependencies": {
+    "mapbox-gl": "^1.7.0",
     "uikit": "^3.3.0",
     "umbrellajs": "^3.1.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",

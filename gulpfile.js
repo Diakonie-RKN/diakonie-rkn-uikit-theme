@@ -5,6 +5,7 @@ var minifyCSS = require('gulp-csso');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+var copy = require('gulp-copy');
 
 
 gulp.task('css', function () {
@@ -36,6 +37,23 @@ gulp.task('js-lorem', function(){
       .pipe(gulp.dest('./'))
 });
 
-gulp.task('js', gulp.series('js-app', 'js-lorem'));
+gulp.task('css-mapbox', function () {
+  var sourceFiles = ['node_modules/mapbox-gl/dist/mapbox-gl.css'];
+  var destination = './dist/css/';
+  return gulp
+      .src(sourceFiles)
+      .pipe(copy(destination, { prefix: 4 }))
+});
 
-gulp.task('default', gulp.series('css', 'js'));
+gulp.task('js-mapbox', function () {
+  var sourceFiles = ['node_modules/mapbox-gl/dist/mapbox-gl.js'];
+  var destination = './dist/js/';
+  return gulp
+      .src(sourceFiles)
+      .pipe(copy(destination, { prefix: 4 }))
+});
+
+gulp.task('js', gulp.series('js-app', 'js-lorem'));
+gulp.task('mapbox', gulp.series('css-mapbox', 'js-mapbox'));
+
+gulp.task('default', gulp.series('css', 'js', 'mapbox'));

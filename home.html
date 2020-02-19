@@ -188,7 +188,33 @@
                 </form>
             </div>
             <div>
-                <iframe uk-responsive src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160086.35198523395!2d6.518934388319198!3d51.17578556317158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b4bf7e3a6981%3A0xa2151229cd99db42!2sRhein-Kreis+Neuss!5e0!3m2!1sde!2sde!4v1552482351734" width="" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <script src='dist/js/mapbox-gl.js'></script>
+                <link href='dist/css/mapbox-gl.css' rel='stylesheet'>
+                <div id="map" class="uk-height-1-1" style="min-height:450px;clear: both;"></div>
+                <script>
+                    var mapZoom = 10, mapCenter = [6.592334, 51.0853], mapMarkerIcon = 'icons/map-marker.svg', mapGeoJson;
+
+                    mapGeoJson = {
+                        "type": "FeatureCollection",
+                        "features": [
+                            {
+                                "type": "Feature",
+                                "properties": {
+                                    "title": "Albert Schweitzer Haus",
+                                    "url": "/einrichtung.html",
+                                    "iconSize": [30, 30]
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [
+                                        6.592334,
+                                        51.0853
+                                    ]
+                                }
+                            }
+                        ]
+                    };
+                </script>
             </div>
         </div>
     </div>
