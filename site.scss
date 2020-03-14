@@ -1,5 +1,6 @@
 // 1. Your custom variables and variable overwrites.
 @import "theme/variables.scss";
+@import "theme/base.scss";
 @import "theme/form.scss";
 @import "theme/icon.scss";
 @import "theme/modal.scss";
@@ -13,6 +14,7 @@
 @import "node_modules/uikit/src/scss/mixins.scss";
 
 // 3. Your custom mixin overwrites.
+@import "theme/base-mixins.scss";
 @import "theme/nav-mixins.scss";
 @import "theme/modal-mixins.scss";
 @import "theme/navbar-mixins.scss";
