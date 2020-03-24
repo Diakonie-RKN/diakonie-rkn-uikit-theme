@@ -1,22 +1,15 @@
 {
-  "name": "diakonie-rhein-kreis-neuss-uikit-theme",
-  "description": "The UIKit based theme for the Diakonie Rhein-Kreis Neuss website",
-  "homepage": "https://www.diakonie-rkn.de/",
   "author": {
     "name": "Jens Kuesters",
     "email": "jens@kuesters.net",
     "url": "https://www.kuesters.net/"
-  },
-  "version": "1.0.4",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/derteaser/diakonie-rkn-uikit-theme.git"
   },
   "dependencies": {
     "mapbox-gl": "^1.9.0",
     "uikit": "^3.3.7",
     "umbrellajs": "^3.1.0"
   },
+  "description": "The UIKit based theme for the Diakonie Rhein-Kreis Neuss website",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
@@ -28,7 +21,15 @@
     "gulp-uglify": "^3.0.2",
     "loremjs": "git://github.com/f/loremjs"
   },
+  "homepage": "https://www.diakonie-rkn.de/",
+  "name": "diakonie-rhein-kreis-neuss-uikit-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derteaser/diakonie-rkn-uikit-theme.git"
+  },
   "resolutions": {
-    "set-value": "^2.0.1"
-  }
+    "set-value": "^2.0.1",
+    "minimist": "^1.2.2"
+  },
+  "version": "1.0.5"
 }
