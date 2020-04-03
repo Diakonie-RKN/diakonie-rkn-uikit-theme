@@ -5,7 +5,7 @@
     "url": "https://www.kuesters.net/"
   },
   "dependencies": {
-    "mapbox-gl": "^1.9.0",
+    "mapbox-gl": "^1.9.1",
     "uikit": "^3.3.7",
     "umbrellajs": "^3.1.0"
   },
