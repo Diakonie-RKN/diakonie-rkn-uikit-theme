@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "mapbox-gl": "^1.9.1",
-    "uikit": "^3.3.7",
+    "uikit": "^3.4.0",
     "umbrellajs": "^3.1.0"
   },
   "description": "The UIKit based theme for the Diakonie Rhein-Kreis Neuss website",
