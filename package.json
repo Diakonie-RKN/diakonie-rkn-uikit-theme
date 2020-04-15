@@ -22,10 +22,8 @@
     "loremjs": "git://github.com/f/loremjs"
   },
   "homepage": "https://www.diakonie-rkn.de/",
+  "license": "UNLICENSED",
   "name": "diakonie-rhein-kreis-neuss-uikit-theme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/derteaser/diakonie-rkn-uikit-theme.git"
@@ -34,5 +32,5 @@
     "set-value": "^2.0.1",
     "minimist": "^1.2.2"
   },
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
