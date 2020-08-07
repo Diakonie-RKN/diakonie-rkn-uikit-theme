@@ -30,7 +30,7 @@ The "Rhein-Kreis Neuss" lettering can be white on dark backgrounds or the primar
 
 ## Demo Pages
 
-* [Kitchen Sink](https://derteaser.github.io/diakonie-rkn-uikit-theme/)
-* [Homepage](https://derteaser.github.io/diakonie-rkn-uikit-theme/home.html)
-* [Institution](https://derteaser.github.io/diakonie-rkn-uikit-theme/einrichtung.html)
-* [News Article](https://derteaser.github.io/diakonie-rkn-uikit-theme/artikel.html)
+* [Kitchen Sink](https://diakonie-rkn.github.io/diakonie-rkn-uikit-theme/)
+* [Homepage](https://diakonie-rkn.github.io/diakonie-rkn-uikit-theme/home.html)
+* [Institution](https://diakonie-rkn.github.io/diakonie-rkn-uikit-theme/einrichtung.html)
+* [News Article](https://diakonie-rkn.github.io/diakonie-rkn-uikit-theme/artikel.html)
